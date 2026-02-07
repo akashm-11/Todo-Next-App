@@ -1,6 +1,7 @@
 import { getTodos } from "@/lib/actions";
 import TodoList from "@/components/todo-list";
 import AddTodoForm from "@/components/add-todo-form";
+export const dynamic = "force-dynamic";
 
 export default async function Home() {
   // Fetch todos using server action
