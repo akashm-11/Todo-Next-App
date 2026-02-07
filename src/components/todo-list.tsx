@@ -6,11 +6,11 @@ import { deleteTodo, toggleTodo } from "@/lib/actions";
 import { CheckCircle, Circle, Trash2 } from "lucide-react";
 
 interface TodoListProps {
-  initialTodos: Todo[];
+  initialTodos: Record<string, any>[];
 }
 
 export default function TodoList({ initialTodos }: TodoListProps) {
-  const [todos, setTodos] = useState<Todo[]>(initialTodos);
+  const [todos, setTodos] = useState<Record<string, any>[]>(initialTodos);
 
   // Update local state when initialTodos change
   useEffect(() => {

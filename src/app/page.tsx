@@ -5,7 +5,6 @@ import AddTodoForm from "@/components/add-todo-form";
 export default async function Home() {
   // Fetch todos using server action
   const todos = await getTodos();
-  console.log(todos);
   return (
     <main className="flex flex-col justify-center-safe items-center min-h-screen bg-amber-50">
       <div className="max-w-md mx-auto bg-rose-200 rounded-xl shadow-md overflow-hidden p-6">
