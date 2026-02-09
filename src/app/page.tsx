@@ -10,7 +10,7 @@ export default async function Home() {
     <main className="flex flex-col justify-center-safe items-center min-h-screen bg-amber-50">
       <div className="max-w-md mx-auto bg-rose-200 rounded-xl shadow-md overflow-hidden p-6">
         <h1 className="text-2xl font-extrabold text-gray-800 mb-6 uppercase text-center">
-          Todo List
+          Todo List version 2
         </h1>
         <AddTodoForm />
         <TodoList initialTodos={todos} />
